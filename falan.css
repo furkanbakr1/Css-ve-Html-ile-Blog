@@ -1,0 +1,191 @@
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --black: #2f3640;
+  --white: #f5f7fd;
+  --green: #4cd137;
+  --yellow: #fbc531;
+  --red: #e84118;
+  --dark: #303f4f;
+  --silver: #9dadae67;
+  --blue: #08606f;
+  --bu: #a3aeafa1;
+  
+  --bg-color: var(--silver);
+  --text-color: var(--);
+  --body-color: var(--silver);
+  --link-color: var(--blue);
+  --link-color-hover: var(--red);
+
+  --box-size: 900px;
+}
+
+:root[data-theme="dark"]{
+  --bg-color: var(--black);
+  --text-color: var(--white);
+  --body-color: var(--dark);
+}
+
+body{
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+/* Helper */
+.clear-fix{
+  clear: both;
+}
+
+/* general */
+header, main{
+  background-color: var(--bg-color);
+  min-height: 20px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  
+}
+
+/* nav */
+
+header {
+  border-bottom: 1px solid var(--silver);
+}
+
+
+header > nav{
+  width: 800px;
+  margin: 0 auto;
+  
+}
+
+header > nav > ul{
+  float: left;
+  list-style: none;
+}
+
+
+header > nav > ul:last-of-type{
+  float: right;
+}
+
+header > nav > ul >li{
+  float: left;
+  margin-right: 10px;
+}
+
+header > nav > ul >li>a{
+  text-decoration: none;
+  color: var(--link-color);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+header > nav > ul >li>a:hover{
+ color: var(--link-color-hover);
+ background-color: silver;
+}
+
+header > nav > ul >li:last-child > a{
+  background-color: var(--blue);
+  color: antiquewhite;
+}
+
+header > nav > ul >li:last-child > a:hover{
+  background-color: var(--dark);
+}
+
+/* main */
+
+main {
+  width: var(--box-size);
+  margin: 0 auto 30px;
+  min-height: 2690px;
+  border: 10px solid var(--black);
+  border-radius: 40px;
+}
+
+/* aside, section */
+
+aside, section{
+  float: left;
+}
+
+aside{
+  width: 30%;
+  padding: 20px;
+}
+
+aside>ul{
+  list-style: none;
+  
+}
+aside > ul > li{
+  margin-bottom: 10px;
+}
+aside > ul > li > a{
+  color: var(--link-color);
+  padding: 6px 10px;
+  display: block;
+}
+
+aside > ul > li > a:hover{
+  color: var(--link-color-hover)
+}
+
+section{
+  width: 70%;
+}
+
+
+article, article>header{
+  background-color: var(--silver);
+}
+
+article{
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+article>header{
+  padding: 0;
+  border-bottom: none;
+}
+
+
+article>footer{
+  padding: 10px 0;
+
+}
+
+article>footer>a{
+  color: var(--link-color);
+}
+
+article>footer>a:hover{
+  color: var(--link-color-hover);
+}
+
+article>p{
+  margin-bottom: 10px;
+}
+
+
+
+img{
+  width: 500px;
+  height: 400px;
+}
+
+
+
+
+
+
+
